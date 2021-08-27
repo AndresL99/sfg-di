@@ -17,7 +17,7 @@ public class GreetingServiceConfig
         return new PetServiceFactory();
     }
 
-    @Profile({"DOG","default"})
+    @Profile({"dog","default"})
     @Bean
     PetService dogPetService(PetServiceFactory petServiceFactory)
     {
